@@ -7,8 +7,8 @@ import (
 	"log"
 	"os"
 
-	"github.com/jaypadia-frame/mp4ff/aac"
-	"github.com/jaypadia-frame/mp4ff/mp4"
+	"github.com/jaypadia-frame/forked-mp4ff/aac"
+	"github.com/jaypadia-frame/forked-mp4ff/mp4"
 )
 
 const (

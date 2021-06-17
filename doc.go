@@ -1,5 +1,5 @@
 /*
-Package mp4ff - MP4 media file parser and writer for AVC and HEVC video, AAC audio and stpp/wvtt subtitles.
+Package forked-mp4ff - MP4 media file parser and writer for AVC and HEVC video, AAC audio and stpp/wvtt subtitles.
 Focused on fragmented files as used for streaming in DASH, MSS and HLS fMP4.
 
 MP4 library
@@ -28,4 +28,4 @@ Example code
 
 Example code is available in the examples directory.
 */
-package mp4ff
+package forked-mp4ff

@@ -1,4 +1,4 @@
-// mp4ff-wvttlister - list wvtt (WebVTT in ISOBMFF) samples
+// forked-mp4ff-wvttlister - list wvtt (WebVTT in ISOBMFF) samples
 package main
 
 import (
@@ -9,12 +9,12 @@ import (
 	"os"
 	"strings"
 
-	"github.com/jaypadia-frame/mp4ff/mp4"
+	"github.com/jaypadia-frame/forked-mp4ff/mp4"
 )
 
-var usg = `Usage of mp4ff-wvttlister:
+var usg = `Usage of forked-mp4ff-wvttlister:
 
-mp4ff-wvttlister lists and displays content of wvtt (WebVTT in ISOBMFF) samples.
+forked-mp4ff-wvttlister lists and displays content of wvtt (WebVTT in ISOBMFF) samples.
 Use track with given non-zero track ID or first wvtt track found in an asset.
 `
 
@@ -29,12 +29,12 @@ var Usage = func() {
 func main() {
 	maxNrSamples := flag.Int("m", -1, "Max nr of samples to parse")
 	trackID := flag.Int("t", 0, "trackID to extract (0 is unspecified)")
-	version := flag.Bool("version", false, "Get mp4ff version")
+	version := flag.Bool("version", false, "Get forked-mp4ff version")
 
 	flag.Parse()
 
 	if *version {
-		fmt.Printf("mp4ff-wvttlister %s\n", mp4.GetVersion())
+		fmt.Printf("forked-mp4ff-wvttlister %s\n", mp4.GetVersion())
 		os.Exit(0)
 	}
 

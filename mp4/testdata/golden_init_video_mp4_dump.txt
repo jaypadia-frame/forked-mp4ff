@@ -17,7 +17,7 @@
        - language: und
       [hdlr] size=52 version=0 flags=000000
        - handlerType: vide
-       - handlerName: "mp4ff video handler"
+       - handlerName: "forked-mp4ff video handler"
       [minf] size=301
         [vmhd] size=20 version=0 flags=000001
         [dinf] size=36
@@ -29,7 +29,7 @@
             [avc3] size=145
              - width: 640
              - height: 360
-             - compressorName: "mp4ff video packager"
+             - compressorName: "forked-mp4ff video packager"
               [avcC] size=59
                - AVCProfileIndication: 77
                - profileCompatibility: 40

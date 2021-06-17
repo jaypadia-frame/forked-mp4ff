@@ -1,4 +1,4 @@
-// mp4ff-nallister - list NAL units and slice types of first AVC or HEVC track of an mp4 (ISOBMFF) file.
+// forked-mp4ff-nallister - list NAL units and slice types of first AVC or HEVC track of an mp4 (ISOBMFF) file.
 package main
 
 import (
@@ -8,14 +8,14 @@ import (
 	"os"
 	"strings"
 
-	"github.com/jaypadia-frame/mp4ff/avc"
-	"github.com/jaypadia-frame/mp4ff/hevc"
-	"github.com/jaypadia-frame/mp4ff/mp4"
+	"github.com/jaypadia-frame/forked-mp4ff/avc"
+	"github.com/jaypadia-frame/forked-mp4ff/hevc"
+	"github.com/jaypadia-frame/forked-mp4ff/mp4"
 )
 
-var usg = `Usage of mp4ff-nallister:
+var usg = `Usage of forked-mp4ff-nallister:
 
-mp4ff-nallister lists NAL units and slice types of AVC or HEVC tracks of an mp4 (ISOBMFF) file.
+forked-mp4ff-nallister lists NAL units and slice types of AVC or HEVC tracks of an mp4 (ISOBMFF) file.
 Takes first video track in a progressive file and the first track in
 a fragmented file.
 `
@@ -31,12 +31,12 @@ var Usage = func() {
 func main() {
 	maxNrSamples := flag.Int("m", -1, "Max nr of samples to parse")
 	codec := flag.String("c", "avc", "Codec to parse (avc or hevc)")
-	version := flag.Bool("version", false, "Get mp4ff version")
+	version := flag.Bool("version", false, "Get forked-mp4ff version")
 
 	flag.Parse()
 
 	if *version {
-		fmt.Printf("mp4ff-nallister %s\n", mp4.GetVersion())
+		fmt.Printf("forked-mp4ff-nallister %s\n", mp4.GetVersion())
 		os.Exit(0)
 	}
 

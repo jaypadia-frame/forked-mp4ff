@@ -1,4 +1,4 @@
-module github.com/jaypadia-frame/mp4ff
+module github.com/jaypadia-frame/forked-mp4ff
 
 go 1.15
 

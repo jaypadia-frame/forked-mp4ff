@@ -3,7 +3,7 @@ package main
 import (
 	"errors"
 
-	"github.com/jaypadia-frame/mp4ff/mp4"
+	"github.com/jaypadia-frame/forked-mp4ff/mp4"
 )
 
 // Segmenter - segment the progressive inFIle

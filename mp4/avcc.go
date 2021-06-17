@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/jaypadia-frame/mp4ff/avc"
+	"github.com/jaypadia-frame/forked-mp4ff/avc"
 )
 
 // AvcCBox - AVCConfigurationBox (ISO/IEC 14496-15 5.4.2.1.2 and 5.3.3.1.2)

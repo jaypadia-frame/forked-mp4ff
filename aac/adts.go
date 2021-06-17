@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/jaypadia-frame/mp4ff/bits"
+	"github.com/jaypadia-frame/forked-mp4ff/bits"
 )
 
 // ADTSHeader - data for an unencrypted ADTS Header with one AAC frame.

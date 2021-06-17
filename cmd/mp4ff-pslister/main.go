@@ -1,4 +1,4 @@
-// mp4ff-pslister - list parameter sets for AVC(H.264) and HEVC(H.265) video in mp4 files.
+// forked-mp4ff-pslister - list parameter sets for AVC(H.264) and HEVC(H.265) video in mp4 files.
 //
 // Print them as hex and with verbose mode provided details in JSON format.
 package main
@@ -14,14 +14,14 @@ import (
 	"os"
 	"strings"
 
-	"github.com/jaypadia-frame/mp4ff/avc"
-	"github.com/jaypadia-frame/mp4ff/hevc"
-	"github.com/jaypadia-frame/mp4ff/mp4"
+	"github.com/jaypadia-frame/forked-mp4ff/avc"
+	"github.com/jaypadia-frame/forked-mp4ff/hevc"
+	"github.com/jaypadia-frame/forked-mp4ff/mp4"
 )
 
-var usg = `Usage of mp4ff-pslister:
+var usg = `Usage of forked-mp4ff-pslister:
 
-mp4ff-pslister lists parameter sets for AVC/H.264 or HEVC/H.265 from mp4 sample description, bytestream, or hex input.
+forked-mp4ff-pslister lists parameter sets for AVC/H.264 or HEVC/H.265 from mp4 sample description, bytestream, or hex input.
 
 It prints them as hex and in verbose mode it also prints details in JSON format.
 `
@@ -42,12 +42,12 @@ func main() {
 	spsHex := flag.String("sps", "", "SPS in hex format")
 	ppsHex := flag.String("pps", "", "PPS in hex format")
 	codec := flag.String("c", "avc", "Codec to parse (avc or hevc or auto)")
-	version := flag.Bool("version", false, "Get mp4ff version")
+	version := flag.Bool("version", false, "Get forked-mp4ff version")
 
 	flag.Parse()
 
 	if *version {
-		fmt.Printf("mp4ff-pslister %s\n", mp4.GetVersion())
+		fmt.Printf("forked-mp4ff-pslister %s\n", mp4.GetVersion())
 		os.Exit(0)
 	}
 

@@ -1,4 +1,4 @@
-//mp4ff-info prints the box tree of input mp4 (ISOBMFF) file.
+//forked-mp4ff-info prints the box tree of input mp4 (ISOBMFF) file.
 package main
 
 import (
@@ -8,12 +8,12 @@ import (
 	"os"
 	"strings"
 
-	"github.com/jaypadia-frame/mp4ff/mp4"
+	"github.com/jaypadia-frame/forked-mp4ff/mp4"
 )
 
-var usg = `Usage of mp4ff-info:
+var usg = `Usage of forked-mp4ff-info:
 
-mp4ff-info prints the box tree of input mp4 (ISOBMFF) file.
+forked-mp4ff-info prints the box tree of input mp4 (ISOBMFF) file.
 For some boxes, more details are available by using -l with a comma-separated list:
   all:1  - level 1 for all boxes
   trun:1 - level 1 only for trun box
@@ -32,12 +32,12 @@ var Usage = func() {
 func main() {
 
 	specBoxLevels := flag.String("l", "", "level of details, e.g. all:1 or trun:1,subs:1")
-	version := flag.Bool("version", false, "Get mp4ff version")
+	version := flag.Bool("version", false, "Get forked-mp4ff version")
 
 	flag.Parse()
 
 	if *version {
-		fmt.Printf("mp4ff-info %s\n", mp4.GetVersion())
+		fmt.Printf("forked-mp4ff-info %s\n", mp4.GetVersion())
 		os.Exit(0)
 	}
 

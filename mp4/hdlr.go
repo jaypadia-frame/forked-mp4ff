@@ -30,22 +30,22 @@ func CreateHdlr(mediaOrHdlrType string) (*HdlrBox, error) {
 	switch mediaOrHdlrType {
 	case "video", "vide":
 		hdlr.HandlerType = "vide"
-		hdlr.Name = "mp4ff video handler"
+		hdlr.Name = "forked-mp4ff video handler"
 	case "audio", "soun":
 		hdlr.HandlerType = "soun"
-		hdlr.Name = "mp4ff audio handler"
+		hdlr.Name = "forked-mp4ff audio handler"
 	case "subtitle", "subt":
 		hdlr.HandlerType = "subt"
-		hdlr.Name = "mp4ff subtitle handler"
+		hdlr.Name = "forked-mp4ff subtitle handler"
 	case "clcp":
 		hdlr.HandlerType = "subt"
-		hdlr.Name = "mp4ff closed captions handler"
+		hdlr.Name = "forked-mp4ff closed captions handler"
 	default:
 		if len(mediaOrHdlrType) != 4 {
 			return nil, fmt.Errorf("Unkown media or hdlr type %s", mediaOrHdlrType)
 		}
 		hdlr.HandlerType = mediaOrHdlrType
-		hdlr.Name = fmt.Sprintf("mp4ff %s handler", mediaOrHdlrType)
+		hdlr.Name = fmt.Sprintf("forked-mp4ff %s handler", mediaOrHdlrType)
 
 	}
 	return hdlr, nil

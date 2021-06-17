@@ -1,5 +1,5 @@
 /*
-Package cmd - command line tools built using mp4ff.
+Package cmd - command line tools built using forked-mp4ff.
 
 Install like
 
@@ -7,7 +7,7 @@ Install like
 
 or remotely as
 
-	go get -u github.com/jaypadia-frame/mp4ff/cmd/mp4ff-info
+	go get -u github.com/jaypadia-frame/forked-mp4ff/cmd/forked-mp4ff-info
 
 */
 package cmd

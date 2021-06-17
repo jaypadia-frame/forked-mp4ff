@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/jaypadia-frame/mp4ff/mp4"
+	"github.com/jaypadia-frame/forked-mp4ff/mp4"
 )
 
 // Resegment file into two segments

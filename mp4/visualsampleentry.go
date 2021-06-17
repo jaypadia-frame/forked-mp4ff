@@ -42,7 +42,7 @@ func CreateVisualSampleEntryBox(name string, width, height uint16, sampleEntry B
 		Horizresolution:    0x00480000, // 72dpi
 		Vertresolution:     0x00480000, // 72dpi
 		FrameCount:         1,
-		CompressorName:     "mp4ff video packager",
+		CompressorName:     "forked-mp4ff video packager",
 		Children:           []Box{},
 	}
 	if sampleEntry != nil {

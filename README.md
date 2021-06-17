@@ -1,21 +1,21 @@
 ![Logo](images/logo.png)
 
-![Test](https://github.com/jaypadia-frame/mp4ff/workflows/Go/badge.svg)
-![golangci-lint](https://github.com/jaypadia-frame/mp4ff/workflows/golangci-lint/badge.svg?branch=master)
-[![GoDoc](https://godoc.org/github.com/jaypadia-frame/mp4ff?status.svg)](http://godoc.org/github.com/jaypadia-frame/mp4ff)
-[![Go Report Card](https://goreportcard.com/badge/github.com/jaypadia-frame/mp4ff)](https://goreportcard.com/report/github.com/jaypadia-frame/mp4ff)
-[![license](https://img.shields.io/github/license/jaypadia-frame/mp4ff.svg)](https://github.com/jaypadia-frame/mp4ff/blob/master/LICENSE.md)
+![Test](https://github.com/jaypadia-frame/forked-mp4ff/workflows/Go/badge.svg)
+![golangci-lint](https://github.com/jaypadia-frame/forked-mp4ff/workflows/golangci-lint/badge.svg?branch=master)
+[![GoDoc](https://godoc.org/github.com/jaypadia-frame/forked-mp4ff?status.svg)](http://godoc.org/github.com/jaypadia-frame/forked-mp4ff)
+[![Go Report Card](https://goreportcard.com/badge/github.com/jaypadia-frame/forked-mp4ff)](https://goreportcard.com/report/github.com/jaypadia-frame/forked-mp4ff)
+[![license](https://img.shields.io/github/license/jaypadia-frame/forked-mp4ff.svg)](https://github.com/jaypadia-frame/forked-mp4ff/blob/master/LICENSE.md)
 
-**NOTE: this is a fork from edgeware/mp4ff - used only for experimental purpose right now**
+**NOTE: this is a fork from edgeware/forked-mp4ff - used only for experimental purpose right now**
 
-Package mp4ff implements MP4 media file parser and writer for AVC and HEVC video, AAC audio and stpp/wvtt subtitles.
+Package forked-mp4ff implements MP4 media file parser and writer for AVC and HEVC video, AAC audio and stpp/wvtt subtitles.
 Focused on fragmented files as used for streaming in DASH, MSS and HLS fMP4.
 
 ## Library
 
-The library has functions for parsing (called Decode) and writing (Encode) in the package `mp4ff/mp4`.
+The library has functions for parsing (called Decode) and writing (Encode) in the package `forked-mp4ff/mp4`.
 It also contains codec specific parsing of of AVC/H.264 including complete parsing of
-SPS and PPS in the package `mp4ff.avc`. HEVC/H.265 parsing is less complete, and available as `mp4ff.hevc`.
+SPS and PPS in the package `forked-mp4ff.avc`. HEVC/H.265 parsing is less complete, and available as `forked-mp4ff.hevc`.
 
 Traditional multiplexed non-fragmented mp4 files can also be parsed and decoded, see `examples/segment`.
 
@@ -125,11 +125,11 @@ sample nr 1 has index 0 in the corresponding slice.
 
 Some useful command line tools are available in `cmd`.
 
-1. `mp4ff-info` prints a tree of the box hierarchy of an mp4 file with information
+1. `forked-mp4ff-info` prints a tree of the box hierarchy of an mp4 file with information
     of the boxes. The level of detail can be increased with the option `-l`, like `-l all:1` for all boxes or `-l trun:1,stss:1` for specific boxes.
-2. `mp4ff-pslister` extracts and displays pps and sps for AVC in an mp4 file.
-3. `mp4ff-nallister` lists NALus and picture types for video in progressive or fragmented file
-4. `mp4ff-wvttlister` lists details of wvtt (WebVTT in ISOBMFF) samples
+2. `forked-mp4ff-pslister` extracts and displays pps and sps for AVC in an mp4 file.
+3. `forked-mp4ff-nallister` lists NALus and picture types for video in progressive or fragmented file
+4. `forked-mp4ff-wvttlister` lists details of wvtt (WebVTT in ISOBMFF) samples
 
 You can install them by going to their respective directory and run `go install .`.
 

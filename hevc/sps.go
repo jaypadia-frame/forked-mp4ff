@@ -4,7 +4,7 @@ import (
 	"bytes"
 	"fmt"
 
-	"github.com/jaypadia-frame/mp4ff/bits"
+	"github.com/jaypadia-frame/forked-mp4ff/bits"
 )
 
 // SPS - HEVC SPS parameters
